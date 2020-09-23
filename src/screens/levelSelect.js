@@ -53,8 +53,11 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 10,
     padding: 5,
+    borderRadius: 4,
+    width: 150,
   },
   buttonLabel: {
+    textAlign: 'center',
     fontSize: 20,
     color: '#EEE',
     fontWeight: 'bold',
@@ -66,6 +69,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#2765F7',
   },
   bgHard: {
-    backgroundColor: '#F26337',
+    backgroundColor: '#FF0000',
   },
 })
