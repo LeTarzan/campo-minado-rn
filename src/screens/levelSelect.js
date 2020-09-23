@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
 import {View, StyleSheet, Text, TouchableOpacity, Modal} from 'react-native';
+import Button from '../components/button';
 
 export default (props) => {
   return (
@@ -12,21 +13,30 @@ export default (props) => {
       <View style={styles.frame}>
         <View style={styles.container}>
           <Text style={styles.title}>Selecione o Nível</Text>
-          <TouchableOpacity
-            style={[styles.button, styles.bgEasy]}
-            onPress={() => props.onLevelSelected(0.1)}>
-            <Text style={styles.buttonLabel}>Fácil</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.button, styles.bgNormal]}
-            onPress={() => props.onLevelSelected(0.2)}>
-            <Text style={styles.buttonLabel}>Intermediário</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.button, styles.bgHard]}
-            onPress={() => props.onLevelSelected(0.3)}>
-            <Text style={styles.buttonLabel}>Difícil</Text>
-          </TouchableOpacity>
+          <Button
+            text="Fácil"
+            onClick={() => props.onLevelSelected(0.1)}
+            buttonStyle={styles.button, styles.bgEasy}
+            labelStyle={styles.button}
+            />
+          <Button
+            text="Normal"
+            onClick={() => props.onLevelSelected(0.2)}
+            buttonStyle={styles.button, styles.bgNormal}
+            labelStyle={styles.button}
+            />
+          <Button
+            text="Difícil"
+            onClick={() => props.onLevelSelected(0.3)}
+            buttonStyle={styles.button, styles.bgHard}
+            labelStyle={styles.button}
+            />
+          <Button
+            text="Insano"
+            onClick={() => props.onLevelSelected(0.4)}
+            buttonStyle={styles.button, styles.bgInsane}
+            labelStyle={styles.button}
+            />
         </View>
       </View>
     </Modal>
@@ -51,7 +61,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   button: {
-    marginTop: 10,
     padding: 5,
     borderRadius: 4,
     width: 150,
@@ -69,6 +78,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#2765F7',
   },
   bgHard: {
+    backgroundColor: '#FF8c00',
+  },
+  bgInsane: {
     backgroundColor: '#FF0000',
   },
+
 })

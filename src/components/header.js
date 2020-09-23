@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import Flag from './flag';
+import Button from './button';
 
 export default (props) => {
   return (
@@ -13,9 +14,12 @@ export default (props) => {
         <Text style={styles.flagsLeft}> = {props.flagsLeft}</Text>
       </View>
 
-      <TouchableOpacity style={styles.button} onPress={props.onNewGame}>
-        <Text style={styles.buttonLabel}>Novo Jogo</Text>
-      </TouchableOpacity>
+      <Button
+        text="Novo Jogo"
+        onClick={props.onNewGame}
+        buttonStyle={styles.button}
+        labelStyle={styles.buttonLabel}
+      />
     </View >
   )
 }
