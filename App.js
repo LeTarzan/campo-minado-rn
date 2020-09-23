@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Alert} from 'react-native';
+import {StyleSheet, Text, View, Alert} from 'react-native';
 import params from './src/params';
 import MineField from './src/components/mineField';
 import Header from './src/components/header';
@@ -106,6 +106,5 @@ const styles = StyleSheet.create({
   board: {
     alignItems: 'center',
     backgroundColor: '#AAA',
-    marginBottom: 5
   },
 });
