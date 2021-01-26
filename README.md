@@ -1,21 +1,21 @@
-# Campo Minado - React Native
+# Minefield - React Native
 
-Campo minado desenvolvido com React Native.
+Minefield developed with React Native.
 
-# Telas
-| Tela Inicial | Seleção de nível | Bandeiras marcadas | Explosão |
+# Screens
+| Start screen | Level selection | Marked flags | Explosion |
 |-|-|-|-|
 |<img src="https://github.com/LeTarzan/campo-minado-rn/blob/master/assets/new.jpg" width="200" height="400" /> | <img src="https://github.com/LeTarzan/campo-minado-rn/blob/master/assets/level_2.jpg" width="200" height="400" /> | <img src="https://github.com/LeTarzan/campo-minado-rn/blob/master/assets/flagged.jpg" width="200" height="400" />| <img src="https://github.com/LeTarzan/campo-minado-rn/blob/master/assets/exploded.jpg" width="200" height="400" /> |
 
-# Funcionalidades 
+# Features 
 
-Apesar da lógica por trás, o jogo é bem simples. 
+Despite the logic behind it, the game is very simple.
 
-* No botão "Novo Jogo", será recriado o campo.
-* Ao clicar no campo, ele abrirá. Caso tenha uma mina o campo explodirá e o jogo termina, se não tiver mina, porém tiver minas por perto aparecerá a quantidade de minas ao redor.
-* Ao clicar e segurar no campo, será marcado uma bandeira no campo.
-* Ao clicar na bandeira no cabeçalho, será aberta a modal para a seleção do jogo que varia de acordo com o tamanho do campo. (O campo é relativo, sendo maior em dispositivos maiores e menor em dispositivos menores.
+* In the button "New game" the game will reset.
+* Clicking on the field it will open. If has a mine on the field will blow and the game is over, if hasn't, but have around will show the quantity of mines around.
+* By clicking and hold the field, will marked with a flag in the field.
+* By clicking on flag in header a modal with the level selection will be opened.
 
 # APK
 
-Se você gostou e quer jogar um pouco, a apk encontra-se [aqui](https://mega.nz/file/I9QV1YpR#dLcAMX9An-zCA1HIbB2vUgfnvyTIxwQMA8ZP5yUpI6k).
+If you liked and want to play, the APP is available [here](https://mega.nz/file/I9QV1YpR#dLcAMX9An-zCA1HIbB2vUgfnvyTIxwQMA8ZP5yUpI6k).
